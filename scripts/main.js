@@ -24,10 +24,8 @@ myImage.onclick = function () {
   if (mySrc === 'images/firefox.png') {
     myImage.setAttribute('src', 'images/opera.png');
     myImage.setAttribute('alt', 'The Opera logo: a red ball with a huge hole.');
-  } else if (mySrc === 'images/opera.png') {
-    myImage.setAttribute('src', 'images/firefox.png');
   } else {
-    console.log("Opa");
+    myImage.setAttribute('src', 'images/firefox.png');
   }
 }
 
