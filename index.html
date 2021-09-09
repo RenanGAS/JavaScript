@@ -17,10 +17,11 @@
         document.body.appendChild(para);
       }
 
-      const buttons = document.querySelectorAll('button');
-      console.log(buttons.length);
+      const buttons = document.querySelectorAll('button'); // buttons é um array com todos os botões que a página contém
+      // console.log(buttons.length);
+      console.log(buttons);
       for (let i = 0; i < buttons.length; i++) {
-        console.log(i);
+        // console.log(i);
         buttons[i].addEventListener('click', createParagraph);
       }
 
@@ -41,8 +42,6 @@
 
   <h1>JavaScript é legal</h1>
   <img src="images/firefox.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
-
-  <button type="button" class="btn btn-light">Adicionar um parágrafo</button>
 
   <!-- <div class="mb-3">
       <label for="exampleFormControlInput1" class="form-label">Nome completo:</label>
