@@ -2,6 +2,8 @@ let myImage = document.querySelector('img');
 let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
 
+console.log("main.js");
+
 if (!localStorage.getItem('name')) {
   setUserName();
 } else {
