@@ -41,6 +41,7 @@
         <p class="guesses"></p>
         <p class="lastResult"></p>
         <p class="lowOrHi"></p>
+        <p class="remainingAtt"></p>
     </div>
 
     <script>
@@ -48,6 +49,7 @@
         let randomNumber = Math.floor(Math.random() * 100) + 1;
 
         const guesses = document.querySelector('.guesses');
+        const remainingAtt = document.querySelector('.remainingAtt');
         const lastResult = document.querySelector('.lastResult');
         const lowOrHi = document.querySelector('.lowOrHi');
 
@@ -55,10 +57,12 @@
         const guessField = document.querySelector('.guessField');
 
         let guessCount = 1;
+        let remainingAttCount = 0;
         let resetButton;
 
         function resetGame() {
             guessCount = 1;
+            remainingAttCount = 0;
 
             const resetParas = document.querySelectorAll('.resultParas p');
             for (let i = 0; i < resetParas.length; i++) {
@@ -97,6 +101,9 @@
             } else {
                 guesses.textContent += ', ' + userGuess;
             }
+
+            remainingAttCount = 10 - guessCount;
+            remainingAtt.textContent = 'Tentativas restantes: ' + remainingAttCount;
 
             if (userGuess === randomNumber) {
                 lastResult.textContent = 'Parabéns! Você acertou!!';
