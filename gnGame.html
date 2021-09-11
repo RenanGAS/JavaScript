@@ -46,6 +46,11 @@
 
     <script>
 
+        // Math.random() gera um número decimal do intervalo (0,1)
+        // Math.floor() arredonda o parâmetro
+        // Fazendo Math.floor(Math.random()*100) conseguimos o intervalo (0,100) 
+        // Fazendo + 1, conseguimos o intervalo [1,100]
+
         let randomNumber = Math.floor(Math.random() * 100) + 1;
 
         const guesses = document.querySelector('.guesses');
