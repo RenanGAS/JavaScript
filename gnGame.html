@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
 
     <title>JavaScript</title>
 
     <style>
-      html {
-        font-family: sans-serif;
-      }
+        html {
+            font-family: sans-serif;
+        }
 
-      body {
-        width: 50%;
-        max-width: 800px;
-        min-width: 480px;
-        margin: 0 auto;
-      }
+        body {
+            width: 50%;
+            max-width: 800px;
+            min-width: 480px;
+            margin: 0 auto;
+        }
 
-      .lastResult {
-        color: white;
-        padding: 3px;
-      }
+        .lastResult {
+            color: white;
+            padding: 3px;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <h1>Descubra o número!</h1>
 
-    <p>Sorteamos um número de 1 a 100. Você consegue adivinhá-lo em 10 tentativas ou menos?. Será informado se o número dado é maior ou menor que o sorteado.</p>
+    <p>Sorteamos um número de 1 a 100. Você consegue adivinhá-lo em 10 tentativas ou menos?. Será informado se o número
+        dado é maior ou menor que o sorteado.</p>
 
     <div class="form">
-      <label for="guessField">Dê um palpite: </label>
-      <input type="text" id="guessField" class="guessField">
-      <input type="submit" value="Submit guess" class="guessSubmit">
+        <label for="guessField">Dê um palpite: </label>
+        <input type="text" id="guessField" class="guessField">
+        <input type="submit" value="Submit guess" class="guessSubmit">
     </div>
 
     <div class="resultParas">
-      <p class="guesses"></p>
-      <p class="lastResult"></p>
-      <p class="lowOrHi"></p>
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
     </div>
 
     <script>
 
-      // Your JavaScript goes here
+        let randomNumber = Math.floor(Math.random() * 100) + 1;
+
+        const guesses = document.querySelector('.guesses');
+        const lastResult = document.querySelector('.lastResult');
+        const lowOrHi = document.querySelector('.lowOrHi');
+
+        const guessSubmit = document.querySelector('.guessSubmit');
+        const guessField = document.querySelector('.guessField');
+
+        let guessCount = 1;
+        let resetButton;
 
     </script>
-  </body>
+</body>
+
 </html>
