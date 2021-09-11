@@ -89,9 +89,14 @@
         function checkGuess() {
             let userGuess = Number(guessField.value);
             if (guessCount === 1) {
-                guesses.textContent = 'Palpites dados: ';
+                guesses.textContent = 'Palpites: ';
             }
-            guesses.textContent += userGuess + ' ';
+
+            if (guessCount === 1) {
+                guesses.textContent += userGuess;
+            } else {
+                guesses.textContent += ', ' + userGuess;
+            }
 
             if (userGuess === randomNumber) {
                 lastResult.textContent = 'Parabéns! Você acertou!!';
