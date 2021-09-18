@@ -14,6 +14,7 @@
       function createParagraph() {
         let para = document.createElement('p');
         para.textContent = 'Você trocou de usuário!';
+        para.style.paddingTop = '1rem';
         document.body.appendChild(para);
       }
 
@@ -54,14 +55,13 @@
             href="basicMath.html">Lavanderia</a>
         </li>
       </ul>
-      <div class="my-2 my-lg-0">
-        <button class="btn btn-warning my-2 my-sm-0" type="submit">Trocar de usuário</button>
-      </div>
     </div>
   </nav>
 
   <h1>JavaScript é legal</h1>
   <img src="images/firefox.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
+
+  <button class="btn btn-warning my-2 my-sm-0" type="submit">Trocar de usuário</button>
 
   <!-- <div class="mb-3">
       <label for="exampleFormControlInput1" class="form-label">Nome completo:</label>
