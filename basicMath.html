@@ -8,7 +8,8 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <title>JavaScript</title>
-    <script async src="./scripts/pageReload.js"></script>
+    <script src="./scripts/pageReload.js" defer></script>
+    <script src="./scripts/turnOnOff.js" defer></script>
 </head>
 
 <body>
@@ -34,16 +35,11 @@
         </div>
     </nav>
 
-    <img src="images/Washing-Machine-Stopped.jpg" alt="Machine" style="width: 50%; padding-top: 5rem;">
-        <form style="padding-top: 3rem;">
-            <div class="form-group row">
-                <input type="submit" value="Ligar" class="col-sm-2 col-form-label" style="font-size: medium;" />
-                <div class="col-sm-10">
-                    <p readonly class="form-control-plaintext">The machine is stopped.</p>
-                </div>
-            </div>
-        </form>
-
+    <img src="images/Washing-Machine-Stopped.png" class="machineImg" alt="Machine" style="width: 60%; padding-top: 5rem;">
+    
+    <button class="machineBtn btn btn-light" style="font-size: 16px;">Ligar</button>
+    <p class="para mt-3">A máquina está desligada!</p>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
