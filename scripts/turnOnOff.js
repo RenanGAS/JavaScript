@@ -1,14 +1,19 @@
-const btn = document.querySelector('button');
-const txt = document.querySelector('p');
+const machineImg = document.querySelector('.machineImg');
+const machineBtn = document.querySelector('.machineBtn');
+const txt = document.querySelector('.para');
 
-btn.addEventListener('click', updateBtn);
+machineBtn.addEventListener('click', updateBtn);
 
 function updateBtn() {
-  if (btn.textContent === 'Start machine') {
-    btn.textContent = 'Stop machine';
-    txt.textContent = 'The machine has started!';
-  } else {
-    btn.textContent = 'Start machine';
-    txt.textContent = 'The machine is stopped.';
-  }
+    if (machineBtn.textContent === 'Ligar') {
+        machineImg.setAttribute('src', 'images/Washing-Machine.png');
+        machineImg.style.width = '80%';
+        machineBtn.textContent = 'Desligar';
+        txt.textContent = 'A máquina está ligada!';
+    } else {
+        machineImg.setAttribute('src', 'images/Washing-Machine-Stopped.png');
+        machineImg.style.width = '60%';
+        machineBtn.textContent = 'Ligar';
+        txt.textContent = 'A máquina está desligada!';
+    }
 }
