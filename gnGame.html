@@ -154,7 +154,7 @@
                 lowOrHi.textContent = '';
                 setGameOver();
             } else if (guessCount === 10) {
-                lastResult.textContent = '!!! Você perdeu :( !!!';
+                lastResult.textContent = `!!! Você perdeu :( !!! A resposta era ${randomNumber}!`;
                 setGameOver();
             } else {
                 lastResult.textContent = 'Errado!';
