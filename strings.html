@@ -42,13 +42,13 @@
         </div>
     </nav>
 
-    <form class="row g-3 mt-5"
+    <div class="row g-3 mt-5"
         style="font-family: 'Courier New', Courier, monospace; font-size: medium; background-color: white; border-radius: 10px;">
         <div class="col-md-6">
             <div class="row mb-3">
                 <label for="nota" class="col-sm-3 col-form-label">Nota:</label>
                 <div class="col-sm-7">
-                    <input type="text" class="form-control" style="font-size: medium; border-radius: 10px;" id="nota"
+                    <input type="text" id="nota" class="form-control" style="font-size: medium; border-radius: 10px;"
                         placeholder="Nota da prova">
                 </div>
             </div>
@@ -57,18 +57,20 @@
             <div class="row mb-3">
                 <label for="prova" class="col-sm-3 col-form-label">Valor:</label>
                 <div class="col-sm-7">
-                    <input type="text" class="form-control" style="font-size: medium; border-radius: 10px;" id="prova"
+                    <input type="text" id="prova" class="form-control" style="font-size: medium; border-radius: 10px;"
                         placeholder="Valor da prova">
                 </div>
             </div>
         </div>
         <div class="col-12">
-            <button id="calcBtn" class="btn btn-outline-warning"
+            <button type="submit" id="calcBtn" class="btn btn-outline-warning"
                 style="font-size: medium; border-radius: 10px; margin-bottom: 10px;">Calcular</button>
         </div>
-    </form>
+    </div>
 
-    <img src="images/naruto.jpg" id="msgImg" style="width: 100%; padding-top: 5rem;">
+    <p id="msg" style="padding-top: 3rem;"></p>
+
+    <img src="images/naruto.jpg" id="msgImg" style="width: 100%; padding-top: 3rem;">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
