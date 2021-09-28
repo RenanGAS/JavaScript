@@ -1,3 +1,5 @@
+/* Pattern Page's style */
+
 html {
   font-size: 10px;
   font-family: 'Open Sans', sans-serif;
@@ -38,4 +40,33 @@ h1 {
 img {
   display: block;
   margin: 0 auto;
+}
+
+/* search's CSS */
+
+.split {
+  height: 50%;
+  width: 25%;
+  position: fixed;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
