@@ -50,29 +50,19 @@ function orderUl() {
 
             let pChar = myChars[j - 1].textContent;
             let fChar = myChars[j].textContent;
-            let changeP = 0;
 
             for (let k = 0; k < biggerLength; k++) {
-                if (pChar[k] < fChar[k]) {
-                    changeP = 1;
+                if (pChar[k] > fChar[k]) {
+                    let aux = pChar;
+                    myChars[j - 1].textContent = fChar;
+                    myChars[j].textContent = aux;
                     break;
                 }
-                else if (pChar[k] > fChar[k]) {
+                else if (pChar[k] < fChar[k]) {
                     break;
                 }
-            }
-
-            if (changeP) {
-                let aux = fChar;
-                myChars[j] = pChar;
-                myChars[j-1] = aux;
             }
         }
-
-        let item = document.createElement("li");
-        item.textContent = myChars[lengthUl-1].textContent;
-        emptyUl.appendChild(item);
-
         lengthUl--;
     }
 }
