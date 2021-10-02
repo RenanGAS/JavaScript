@@ -44,22 +44,9 @@ img {
   margin: 0 auto;
 }
 
-/* search's CSS */
-
-.split {
-  height: 300%;
-  width: 40%;
-  position: absolute;
-  overflow-x: auto;
-  background-color: white;
-}
-
-/* Control the left side */
-.left {
-  left: 5%;
-}
-
-/* Control the right side */
-.right {
-  right: 1%;
+.visible-scrollbar{
+  display: block;
+  width: 10em;
+  overflow: auto;
+  height: 2em;
 }
