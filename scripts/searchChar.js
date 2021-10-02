@@ -9,10 +9,10 @@ orderBtn.addEventListener("click", orderUl);
 
 function searchAndCreate() {
 
+    emptyUl.innerHTML = "";
+
     let searchTxt = String(charInput.value);
     searchTxt = searchTxt.toLowerCase();
-    
-    emptyUl.innerHTML = "";
 
     for (let i = 0; i < myChars.length; i++) {
 
@@ -28,6 +28,8 @@ function searchAndCreate() {
 }
 
 function orderUl() {
+
+    emptyUl.innerHTML = "";
 
     let lengthUl = myChars.length;
 
